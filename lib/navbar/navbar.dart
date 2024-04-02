@@ -1,0 +1,40 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:machineone/controllers/navigation_controller.dart';
+import 'package:machineone/utils/screens.dart';
+
+class ApplicationNavbar extends StatelessWidget {
+  const ApplicationNavbar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final NavigationController navigationController =
+    Get.put(NavigationController());
+
+    return GetBuilder<NavigationController>(builder: (context) {
+      return Scaffold(
+        body: IndexedStack(
+          index: navigationController.currentPageIndex,
+          children: screens,
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.amber,
+          currentIndex: navigationController.currentPageIndex,
+          onTap: navigationController.changeCurrentPage,
+          iconSize: 0,
+          items: [
+
+            _bottomNavigation("TAB 1"),
+            _bottomNavigation("TAB 2"),
+            _bottomNavigation("TAB 3"),
+
+          ],
+        ),
+      );
+    });
+  }
+}
+
+BottomNavigationBarItem _bottomNavigation(String tabName) {
+  return BottomNavigationBarItem(icon: const Icon(Icons.home), label: tabName);
+}
