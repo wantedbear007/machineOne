@@ -7,8 +7,8 @@ class PageOneController extends GetxController {
 
   RxBool isPageOpen = false.obs;
 
-  void setPage(bool ck) {
-    isPageOpen(ck);
+  void setPage(bool status) {
+    isPageOpen(status);
   }
 
   void back() {

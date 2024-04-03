@@ -20,20 +20,16 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
-
-      unknownRoute: GetPage(name: "/notfound", page: () => const UnknownScreen()),
+    return GetMaterialApp(
+      unknownRoute:
+          GetPage(name: "/notfound", page: () => const UnknownScreen()),
       // initialRoute: AppRoutes.getNavbarScreen(),
       initialRoute: "/",
       // getPages: AppRoutes.routes,
-      getPages: [
-        GetPage(name: "/", page: () => HomeScreen())
-      ],
+      getPages: [GetPage(name: "/", page: () => const HomeScreen())],
       initialBinding: HomeScreenBindings(),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
-      // home: const ApplicationNavbar(),
-
+      home: const HomeScreen(),
     );
   }
 }

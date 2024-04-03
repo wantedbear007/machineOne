@@ -15,17 +15,17 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       centerTitle: true,
       backgroundColor: Colors.black,
-      leading: InkWell(
-        child: iconVisibility
-            ? Icon(
+      leading: iconVisibility
+          ? InkWell(
+              child: Icon(
                 icon,
                 color: Colors.white,
-              )
-            : null,
-        onTap: () {
-          Navigator.of(context).pop();
-        },
-      ),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+              },
+            )
+          : null,
       title: Text(
         titleText,
         style:
@@ -36,5 +36,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

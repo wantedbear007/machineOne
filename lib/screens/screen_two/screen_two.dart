@@ -18,11 +18,13 @@ class ScreenTwo extends StatelessWidget {
         child: CustomButton(
           onTapEvent: () {
             Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const PageThree(
-                          navigationIcon: Icons.close,
-                        )));
+              context,
+              MaterialPageRoute(
+                builder: (context) => const PageThree(
+                  navigationIcon: Icons.close,
+                ),
+              ),
+            );
           },
           buttonText: "PAGE 3",
         ),

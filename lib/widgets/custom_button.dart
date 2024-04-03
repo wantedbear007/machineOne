@@ -4,8 +4,6 @@ class CustomButton extends StatelessWidget {
   final String buttonText;
   final VoidCallback onTapEvent;
 
-  // final BuildContext propContext;
-
   const CustomButton({super.key,
     // super.key,
     required this.buttonText,
