@@ -9,7 +9,7 @@
 
 <br>
 
-[Download](https://docs.flutter.dev/get-started/codelab) android release
+[Download](https://github.com/wantedbear007/machineOne/releases/download/android/machineOne.apk) android release
 
 <h2>Watch Implementation</h2>
 
