@@ -8,11 +8,20 @@ class FoodContainers extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
-      width: 100,
-      height: 40,
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+      decoration: const BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          color: Colors.red),
+      // color: Colors.amber,
+      // width: 20,
+      alignment: Alignment.center,
+      height: 50,
       child: InkWell(
-        child: Text(foodName),
+        child: Text(
+          foodName,
+          style: const TextStyle(color: Colors.white),
+        ),
       ),
     );
   }

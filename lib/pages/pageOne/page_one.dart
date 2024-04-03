@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:machineone/navbar/navbar.dart';
 import 'package:machineone/pages/pageThree/page_three.dart';
 import 'package:machineone/widgets/app_bar.dart';
 import 'package:machineone/widgets/custom_button.dart';

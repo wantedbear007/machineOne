@@ -6,7 +6,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final bool iconVisibility;
 
   const CustomAppBar(
-      {required this.titleText,
+      {super.key, required this.titleText,
       required this.icon,
       required this.iconVisibility});
 

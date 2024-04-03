@@ -21,7 +21,7 @@ class HomeScreen extends GetView<HomeScreenController> {
                 Navigator(
                   key: controller.navigationKey,
                   onGenerateRoute: (routeSettings) {
-                    return MaterialPageRoute(builder: (_) => ScreenOne());
+                    return MaterialPageRoute(builder: (_) => const ScreenOne());
                   },
                 ),
                 const ScreenTwo(),
@@ -30,8 +30,13 @@ class HomeScreen extends GetView<HomeScreenController> {
             ),
             bottomNavigationBar: BottomNavigationBar(
               selectedIconTheme: const IconThemeData(color: Colors.red),
-              selectedItemColor: Colors.amber,
+              // selectedLabelStyle: Colors.red,
+              selectedItemColor: Colors.red,
               currentIndex: controller.tabIndex,
+              // backgroundColor: Colors.red,
+             unselectedItemColor: Colors.black,
+
+              // fixedColor: Colors.red,
               onTap: controller.changeTabIndex,
               iconSize: 0,
               items: <BottomNavigationBarItem>[
@@ -51,5 +56,7 @@ BottomNavigationBarItem _bottomNavigation(String tabName) {
   return BottomNavigationBarItem(
       icon: const Icon(Icons.home),
       label: tabName,
-      backgroundColor: Colors.red);
+      // backgroundColor: Colors.red
+
+    );
 }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:machineone/navbar/navbar.dart';
-import 'package:machineone/routes/routes.dart';
 import 'package:machineone/screens/home_screen/home_screen.dart';
 import 'package:machineone/screens/home_screen/home_screen_bindings.dart';
 import 'package:machineone/screens/unknow_screen.dart';
