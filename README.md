@@ -17,6 +17,17 @@
 [Watch](https://drive.google.com/file/d/17pMmQbdWdsmhg6ntdV8cwRE1lLzkVap3/view?usp=sharing)
 
 
+<h2>Screenshots</h2>
+
+<div style="white-space: nowrap;">
+<img width="190" alt="Home screen" src="https://github.com/wantedbear007/machineOne/blob/main/screenshot/1.png">
+  <img width="190" alt="Home screen" src="https://github.com/wantedbear007/machineOne/blob/main/screenshot/2.png">
+  <img width="190" alt="Home screen" src="https://github.com/wantedbear007/machineOne/blob/main/screenshot/3.png">
+  <img width="190" alt="Home screen" src="https://github.com/wantedbear007/machineOne/blob/main/screenshot/4.png">
+  <img width="190" alt="Home screen" src="https://github.com/wantedbear007/machineOne/blob/main/screenshot/5.png">
+  <img width="190" alt="Home screen" src="https://github.com/wantedbear007/machineOne/blob/main/screenshot/6.png">
+</div>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
