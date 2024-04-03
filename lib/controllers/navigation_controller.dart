@@ -6,6 +6,7 @@ class NavigationController extends GetxController {
 
 //   to change tabs
   void changeCurrentPage(int index) {
+    print("your current index is ${index}");
     currentPageIndex = index;
     update();
   }

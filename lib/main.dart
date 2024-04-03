@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:machineone/navbar/navbar.dart';
 import 'package:machineone/routes/routes.dart';
-import 'package:machineone/screens/home_screen.dart';
+import 'package:machineone/screens/home_screen/home_screen.dart';
+import 'package:machineone/screens/home_screen/home_screen_bindings.dart';
 import 'package:machineone/screens/unknow_screen.dart';
 
 void main() {
@@ -20,12 +21,19 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return  GetMaterialApp(
+
       unknownRoute: GetPage(name: "/notfound", page: () => const UnknownScreen()),
-      initialRoute: AppRoutes.getNavbarScreen(),
-      getPages: AppRoutes.routes,
+      // initialRoute: AppRoutes.getNavbarScreen(),
+      initialRoute: "/",
+      // getPages: AppRoutes.routes,
+      getPages: [
+        GetPage(name: "/", page: () => HomeScreen())
+      ],
+      initialBinding: HomeScreenBindings(),
       debugShowCheckedModeBanner: false,
-      home: const ApplicationNavbar(),
-      // home: HomeScreen(),
+      home: HomeScreen(),
+      // home: const ApplicationNavbar(),
+
     );
   }
 }
