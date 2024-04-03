@@ -5,16 +5,18 @@ import 'package:machineone/widgets/app_bar.dart';
 import 'package:machineone/widgets/food_containers.dart';
 
 class PageThree extends GetView<PageThreeControllers> {
-  const PageThree({super.key});
+  final IconData? navigationIcon;
+
+  const PageThree({super.key, this.navigationIcon});
 
   @override
   Widget build(BuildContext context) {
     // list of foods
     List<dynamic> foods = controller.getData();
     return Scaffold(
-        appBar: const CustomAppBar(
+        appBar: CustomAppBar(
           iconVisibility: true,
-          icon: Icons.arrow_back,
+          icon: navigationIcon ?? Icons.arrow_back,
           titleText: "PAGE 3",
         ),
         body: foods != null
@@ -24,7 +26,7 @@ class PageThree extends GetView<PageThreeControllers> {
                   return FoodContainers(foodName: foods[index]);
                 })
             : const Center(
-                child:  Text("No food names available "),
+                child: Text("No food names available "),
               ));
   }
 }
