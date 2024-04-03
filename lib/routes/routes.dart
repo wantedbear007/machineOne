@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
 import 'package:machineone/navbar/navbar.dart';
 import 'package:machineone/pages/pageOne/page_one.dart';
-import 'package:machineone/pages/page_three.dart';
-import 'package:machineone/pages/page_two.dart';
+import 'package:machineone/pages/pageThree/page_three.dart';
+import 'package:machineone/pages/pageTwo/page_two.dart';
 import 'package:machineone/screens/home_screen/home_screen.dart';
 import 'package:machineone/screens/screen_three/screen_three.dart';
 import 'package:machineone/screens/screen_two/screen_two.dart';

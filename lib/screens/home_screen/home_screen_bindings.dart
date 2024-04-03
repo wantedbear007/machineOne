@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:machineone/pages/pageOne/pageone_controller.dart';
+import 'package:machineone/pages/pageThree/Pagethree_controllers.dart';
 import 'package:machineone/screens/home_screen/home_screen_controller.dart';
 import 'package:machineone/screens/screen_one/screen_one_controller.dart';
 
@@ -10,6 +11,6 @@ class HomeScreenBindings extends Bindings {
     Get.lazyPut<HomeScreenController>(() => HomeScreenController());
     Get.lazyPut<ScreenOneController>(() => ScreenOneController());
     Get.lazyPut<PageOneController>(() => PageOneController());
+    Get.lazyPut<PageThreeControllers>(() => PageThreeControllers());
   }
-
 }
