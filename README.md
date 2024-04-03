@@ -1,6 +1,21 @@
 # machineone
 
-A new Flutter project.
+<p>A flutter based application uses Getx micro framework implements bottom tab navigation and nested navigation.</p>
+
+<h2>Improvements to be added</h2>
+
+
+- DRY principles need to be improved.
+
+<br>
+
+[Download](https://docs.flutter.dev/get-started/codelab) android release
+
+<h2>Watch Implementation</h2>
+
+
+[Watch](https://drive.google.com/file/d/17pMmQbdWdsmhg6ntdV8cwRE1lLzkVap3/view?usp=sharing)
+
 
 ## Getting Started
 
